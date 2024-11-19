@@ -34,6 +34,8 @@ test:
 
 # Lint ALL THE THINGS
 lint:
+	isort .
+	black .
 	$(PYTHON) -m flake8 app
 
 # Clean virtual environment and temporary files
