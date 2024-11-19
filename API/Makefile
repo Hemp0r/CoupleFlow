@@ -3,7 +3,7 @@ VENV = venv
 PYTHON = $(VENV)/bin/python
 PIP = $(VENV)/bin/pip
 UVICORN = $(PYTHON) -m uvicorn
-APP = backend.app.main:app
+APP = app.main:app
 
 .PHONY: help
 help:
@@ -45,3 +45,6 @@ clean:
 # Freeze dependencies into requirements.txt
 freeze:
 	$(PIP) freeze > $(REQ)
+
+sql-init:
+	$(PYTHON) -m app.scripts.db_init
