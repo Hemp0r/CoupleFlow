@@ -1,0 +1,75 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Distribution and packaging
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+*.out
+*.err
+logs/
+temp/
+tmp/
+
+# Test output
+.coverage
+.tox/
+.pytest_cache/
+htmlcov/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Docker-related
+*.env
+*.env.local
+docker-compose.override.yml
+
+# Security
+secrets.json
+
+# Python environment variables
+.env
+.env.*
+
+# Miscellaneous
+*.bak
+*.swp
+*.orig
+*.rej
+
+# FastAPI-specific
+alembic/
+*.snapshot
+
+# Linting and static analysis
+.mypy_cache/
+.pyre/
+.pytype/
+pylint_report.txt
+
+# Project documentation
+*.html
+*.pdf
